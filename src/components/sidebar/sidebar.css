@@ -25,6 +25,10 @@
   border-radius: 25px;
 }
 
+.link-styles { /* Targets the React-Router Link */
+  color: black;
+}
+
 .add-channel{
   border: 2px solid black;
   border-radius: 40%;
