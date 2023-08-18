@@ -1,0 +1,50 @@
+.sidebar{
+  background-color: white;
+  color: black;
+  display: flex;
+  height: 100vh;
+  width: 25vw;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.sidebar-channels{
+  list-style: none;
+  padding-left: 0px;
+}
+
+.sidebar-channels > li {
+  margin-top:10px;
+  margin-bottom: 10px;
+  border: 2px solid black;
+  border-radius: 25px;
+}
+
+.link-styles { /* Targets the React-Router Link */
+  color: black;
+}
+
+.add-channel{
+  border: 2px solid black;
+  border-radius: 40%;
+  align-self: flex-end;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  height: 3em;
+}
+
+.add-channel img {
+  height: 100%;
+  width: 100%;
+}
+
+.add-channel:hover{
+  cursor: pointer;
+}
