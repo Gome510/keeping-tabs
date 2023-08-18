@@ -1,6 +1,6 @@
 import React from "react";
 import Message from "./Message"
-import messageData from "../assets/message-data.json";
+import messageData from "../../../assets/message-data.json";
 
 
 export default function Messages(){
