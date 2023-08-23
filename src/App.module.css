@@ -1,0 +1,15 @@
+body {
+  margin: 0 auto;
+  padding: 0rem;
+  text-align: center;
+}
+
+.sidebar {
+  width: 25%;
+  height: 100vh;;
+}
+
+.main-content {
+  width: 75%;
+  height: 100vh;
+}
