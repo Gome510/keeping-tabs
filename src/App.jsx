@@ -1,12 +1,12 @@
-import './App.css';
 import MainContent from './components/MainContent/MainContent';
 import Sidebar from './components/Sidebar/Sidebar';
+import classes from './App.module.css';
 
 function App() {
   return (
     <>
-    <Sidebar />
-      <MainContent />
+      <Sidebar className={classes.sidebar} />
+      <MainContent className={classes["main-content"]} />
     </>
   );
 }
