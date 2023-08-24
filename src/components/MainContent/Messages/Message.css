@@ -1,10 +1,10 @@
 #message-container {
    background-color: #f6f6ff;
    display: grid;
-   grid-template-columns: 10% 90%; /*NEED HELP had this using fr but would continually stretch off page */
-   grid-template-rows: 40% 60%;
+   grid-template-columns: 5% 95%; 
    grid-column-gap: 0px;
    grid-row-gap: 0px;
+   color: black;
 }
 
 #userProfPic {
