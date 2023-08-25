@@ -1,17 +1,16 @@
 .sidebar{
   background-color: white;
   color: black;
-  display: flex;
   height: 100vh;
-  width: 25vw;
+  /* display: flex;
   position: absolute;
   left: 0px;
   top: 0px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
-}
+  justify-content: space-between;*/
+} 
 
 .sidebar-channels{
   list-style: none;

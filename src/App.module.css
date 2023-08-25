@@ -1,15 +1,26 @@
-body {
+ body {
   margin: 0 auto;
   padding: 0rem;
   text-align: center;
 }
+.grid{
+display: grid;
+grid-template-columns: 15% 85%;
+grid-template-rows: 1fr;
+grid-column-gap: 0px;
+grid-row-gap: 0px;
+height: 100vh;
+overflow-y: hidden;
+}
 
 .sidebar {
-  width: 25%;
-  height: 100vh;;
+  grid-area: 1 / 1 / 2 / 2; 
+  border: purple 10px;
+  overflow-y: auto;
 }
 
-.main-content {
-  width: 75%;
-  height: 100vh;
+ .main-content {
+  grid-area: 1 / 2 / 2 / 3; 
+  border: orange 10px;
 }
+

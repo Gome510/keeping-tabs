@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "text": "Hello there!",
+    "text": "Hello everyone, today I have a meeting at 3pm, do you think we can reschedule lunch for 12:30? If we can, let's meet at Fox Pub on H street. If not, I wont be able to make it for lunch so please enjoy. On another note, the LOI report for CEO is due this Thursday so pleas make sure to send it to me by this Tuesday so I have ample time to look it over and give my feedback.",
     "user_id": 101,
     "user_name": "Alice",
     "pfp": "",
@@ -9,7 +9,7 @@
   },
   {
     "id": 2,
-    "text": "Hey! How's it going?",
+    "text": "Hey! How's it going?Hello everyone, today I have a meeting at 3pm, do you think we can reschedule lunch for 12:30? If we can, let's meet at Fox Pub on H street. If not, I wont be able to make it for lunch so please enjoy. On another note, the LOI report for CEO is due this Thursday so pleas make sure to send it to me by this Tuesday so I have ample time to look it over and give my feedback.Hello everyone, today I have a meeting at 3pm, do you think we can reschedule lunch for 12:30? If we can, let's meet at Fox Pub on H street. If not, I wont be able to make it for lunch so please enjoy. On another note, the LOI report for CEO is due this Thursday so pleas make sure to send it to me by this Tuesday so I have ample time to look it over and give my feedback.",
     "user_id": 102,
     "user_name": "Bob",
     "pfp": "",
@@ -38,5 +38,68 @@
     "user_name": "Alice",
     "pfp": "",
     "time": "2023-08-15T11:00:00"
+  },
+  {
+    "id": 6,
+    "text": "Hello everyone, today I have a meeting at 3pm, do you think we can reschedule lunch for 12:30? If we can, let's meet at Fox Pub on H street. If not, I wont be able to make it for lunch so please enjoy. On another note, the LOI report for CEO is due this Thursday so pleas make sure to send it to me by this Tuesday so I have ample time to look it over and give my feedback.",
+    "user_id": 101,
+    "user_name": "Alice",
+    "pfp": "",
+    "time": "2023-08-15T10:00:00"
+  },
+  {
+    "id": 7,
+    "text": "Hello everyone, today I have a meeting at 3pm, do you think we can reschedule lunch for 12:30? If we can, let's meet at Fox Pub on H street. If not, I wont be able to make it for lunch so please enjoy. On another note, the LOI report for CEO is due this Thursday so pleas make sure to send it to me by this Tuesday so I have ample time to look it over and give my feedback.",
+    "user_id": 101,
+    "user_name": "Alice",
+    "pfp": "",
+    "time": "2023-08-15T10:00:00"
+  },
+  {
+    "id": 8,
+    "text": "Hello everyone, today I have a meeting at 3pm, do you think we can reschedule lunch for 12:30? If we can, let's meet at Fox Pub on H street. If not, I wont be able to make it for lunch so please enjoy. On another note, the LOI report for CEO is due this Thursday so pleas make sure to send it to me by this Tuesday so I have ample time to look it over and give my feedback.",
+    "user_id": 101,
+    "user_name": "Alice",
+    "pfp": "",
+    "time": "2023-08-15T10:00:00"
+  },
+  {
+    "id": 9,
+    "text": "Hello everyone, today I have a meeting at 3pm, do you think we can reschedule lunch for 12:30? If we can, let's meet at Fox Pub on H street. If not, I wont be able to make it for lunch so please enjoy. On another note, the LOI report for CEO is due this Thursday so pleas make sure to send it to me by this Tuesday so I have ample time to look it over and give my feedback.",
+    "user_id": 101,
+    "user_name": "Alice",
+    "pfp": "",
+    "time": "2023-08-15T10:00:00"
+  },  {
+    "id": 10,
+    "text": "Hello everyone, today I have a meeting at 3pm, do you think we can reschedule lunch for 12:30? If we can, let's meet at Fox Pub on H street. If not, I wont be able to make it for lunch so please enjoy. On another note, the LOI report for CEO is due this Thursday so pleas make sure to send it to me by this Tuesday so I have ample time to look it over and give my feedback.",
+    "user_id": 101,
+    "user_name": "Alice",
+    "pfp": "",
+    "time": "2023-08-15T10:00:00"
+  },
+  {
+    "id": 10,
+    "text": "Hello everyone, today I have a meeting at 3pm, do you think we can reschedule lunch for 12:30? If we can, let's meet at Fox Pub on H street. If not, I wont be able to make it for lunch so please enjoy. On another note, the LOI report for CEO is due this Thursday so pleas make sure to send it to me by this Tuesday so I have ample time to look it over and give my feedback.",
+    "user_id": 101,
+    "user_name": "Alice",
+    "pfp": "",
+    "time": "2023-08-15T10:00:00"
+  },
+  {
+    "id": 10,
+    "text": "Hello everyone, today I have a meeting at 3pm, do you think we can reschedule lunch for 12:30? If we can, let's meet at Fox Pub on H street. If not, I wont be able to make it for lunch so please enjoy. On another note, the LOI report for CEO is due this Thursday so pleas make sure to send it to me by this Tuesday so I have ample time to look it over and give my feedback.",
+    "user_id": 101,
+    "user_name": "Alice",
+    "pfp": "",
+    "time": "2023-08-15T10:00:00"
+  },
+  {
+    "id": 10,
+    "text": "Hello everyone, today I have a meeting at 3pm, do you think we can reschedule lunch for 12:30? If we can, let's meet at Fox Pub on H street. If not, I wont be able to make it for lunch so please enjoy. On another note, the LOI report for CEO is due this Thursday so pleas make sure to send it to me by this Tuesday so I have ample time to look it over and give my feedback.",
+    "user_id": 101,
+    "user_name": "Alice",
+    "pfp": "",
+    "time": "2023-08-15T10:00:00"
   }
 ]

@@ -4,10 +4,11 @@
   font-weight: 400;
 
   color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  color: black;
+  background-color:#f6f6ff;
 
   text-rendering: optimizeLegibility;
   -webkit-text-size-adjust: 100%;
+  border: red 5px;
 }
 
