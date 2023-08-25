@@ -10,11 +10,13 @@ grid-template-rows: 1fr;
 grid-column-gap: 0px;
 grid-row-gap: 0px;
 height: 100vh;
+overflow-y: hidden;
 }
 
 .sidebar {
   grid-area: 1 / 1 / 2 / 2; 
   border: purple 10px;
+  overflow-y: auto;
 }
 
  .main-content {

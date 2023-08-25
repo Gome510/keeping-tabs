@@ -6,8 +6,8 @@ export default function Message (props) {
     const circleStyle={
         borderRadius:"50%",
         backgroundColor:"white",
-        width:"70px",
-        height:"70px"
+        width:"60px",
+        height:"60px"
     }
 
     const formattedTimestamp = new Date(props.time).toLocaleString();
@@ -20,7 +20,7 @@ export default function Message (props) {
           <div id="message-center">
           <div id='userName'><h3>{props.userName}</h3> </div> 
          <div id='timeStamp'>{formattedTimestamp}</div>
-         <div id='deleteButton' > <button style={{ backgroundColor: 'transparent'}}> {'\u274C'} </button></div>
+         <div id='deleteButton' > <button> {'\u274C'} </button></div>
          <div id='messageText'> <p> {props.text} </p></div>
           </div>
        </div>
