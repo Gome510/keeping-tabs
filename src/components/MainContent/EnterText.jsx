@@ -1,16 +1,30 @@
-import { useRef } from 'react';
+import { addDoc, collection, serverTimestamp } from "firebase/firestore";
+import { firestore, auth } from "../../firebase_setup/firebase";
+
+import { useState } from 'react';
 
 // import Button from '../UI/Button'; // ??
 // import Input from '../UI/Input'; // ??
 import classes from './EnterText.module.css';
 
 const EnterText = () => {
-  const messageInputRef = useRef();
+  const [input, setInput] = useState("")
 
-  const submitMessageHandler = (event) => {
+  const submitMessageHandler = async (event) => {
     event.preventDefault();
+    
+    const { uid, displayName, photoURL } = auth.currentUser;
+    const newMessage = await addDoc(collection(firestore, "channel1"), {
+      text: input,
+      user_id: uid,
+      user_name: displayName,
+      pfp: photoURL,
+      time: serverTimestamp(),
+    });
 
-    console.log('Message Sent');
+    console.log(newMessage)
+
+    setInput("");
   };
 
   return (
@@ -18,10 +32,11 @@ const EnterText = () => {
       <input
         className={classes.input}
         id='message'
+        value={input}
         placeholder='Enter message here...'
-        ref={messageInputRef}
-      ></input>
-      <button className={classes.btn}>Send</button>
+        onChange={(e) => setInput(e.target.value)}
+      />
+      <button type='submit' className={classes.btn}>Send</button>
     </form>
   );
 };
