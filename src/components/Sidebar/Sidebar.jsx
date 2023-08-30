@@ -1,6 +1,7 @@
 import React from "react";
 import "./Sidebar.css";
 import { Link } from "react-router-dom";
+import SignInButton from "./SignInButton/SignInButton";
 
 function Sidebar() {
   return (
@@ -20,6 +21,9 @@ function Sidebar() {
         <Link className="link-styles" to="/test3">
             Channel Three
           </Link>
+        </li>
+        <li>
+          <SignInButton />
         </li>
       </ul>
       <div className="add-channel">
