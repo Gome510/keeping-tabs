@@ -15,7 +15,7 @@ export default function Message (props) {
       await deleteDoc(doc(firestore, "channel1", props.id)); //update when multiple channels
     }
 
-    const formattedTimestamp = new Date(props.time).toLocaleString();
+    const formattedTimestamp = props.time.toDate().toLocaleString();
     //Sets user picture to white circle if pfp property is an empty string.
     const userPic = props.pfp ? <img src={props.pfp}/> : <div style={circleStyle}></div> 
 
