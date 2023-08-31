@@ -6,6 +6,7 @@ import { useState } from 'react';
 // import Button from '../UI/Button'; // ??
 // import Input from '../UI/Input'; // ??
 import classes from './EnterText.module.css';
+import arrow from "../../assets/sendArrow.png"
 
 const EnterText = () => {
   const [input, setInput] = useState("")
@@ -28,6 +29,7 @@ const EnterText = () => {
   };
 
   return (
+    <div className={classes.inputContainer }>
     <form className={classes.container} onSubmit={submitMessageHandler}>
       <input
         className={classes.input}
@@ -38,6 +40,7 @@ const EnterText = () => {
       />
       <button type='submit' className={classes.btn}>Send</button>
     </form>
+    </div>
   );
 };
 

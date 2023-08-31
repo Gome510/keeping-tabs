@@ -13,14 +13,10 @@ function App() {
     dataRef.current.value = " ";
   }
   return (
-    <>
-      <Sidebar className={classes.sidebar} />
-      <MainContent className={classes["main-content"]} />
-      <form onSubmit={submithandler}>
-        <input type="text" ref={dataRef}></input>
-        <button type="submit">Save</button>
-      </form>
-    </>
+    <div className={classes["grid"]}>
+      <div className={classes["sidebar"]}> <Sidebar className={classes.sidebar} /> </div>
+     <div className={classes["main-content"]}> <MainContent className={classes["main-content"]} /> </div>
+    </div>
   );
 }
 
