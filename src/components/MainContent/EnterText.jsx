@@ -14,6 +14,11 @@ const EnterText = () => {
   const submitMessageHandler = async (event) => {
     event.preventDefault();
     
+    if (!auth.currentUser) {
+      console.log("please sign in to send messages.")
+      return;
+    }
+    
     const { uid, displayName, photoURL } = auth.currentUser;
     const newMessage = await addDoc(collection(firestore, "channel1"), { //this "channel1" should be replace with the variable for the current channel
       text: input,
