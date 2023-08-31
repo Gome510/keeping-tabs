@@ -11,7 +11,7 @@ export default function Messages(){
     useEffect(() => {
         const req = query(
             collection(firestore, 'channel1'), //update with actual channel variable
-            orderBy("time","desc")
+            orderBy("time","asc")
         )
 
         const observer = onSnapshot(req, (querySnapshot) => {
