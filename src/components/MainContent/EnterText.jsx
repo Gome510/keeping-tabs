@@ -8,6 +8,7 @@ import { useState } from 'react';
 import classes from './EnterText.module.css';
 import arrow from "../../assets/sendArrow.png"
 
+
 const EnterText = () => {
   const [input, setInput] = useState("")
 
@@ -43,7 +44,7 @@ const EnterText = () => {
         placeholder='Enter message here...'
         onChange={(e) => setInput(e.target.value)}
       />
-      <button type='submit' className={classes.btn}>Send</button>
+      <button type='submit' className={classes.btn}> </button>
     </form>
     </div>
   );

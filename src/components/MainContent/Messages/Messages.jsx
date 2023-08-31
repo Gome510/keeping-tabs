@@ -43,10 +43,12 @@ export default function Messages(){
         return(
             <Message 
                 id={message.id}
+                key={message.id}
                 text={message.text}
                 time={message.time}
                 pfp={message.pfp}
                 userName={message.user_name}
+                userId={message.user_id}
             />
         )
     });
