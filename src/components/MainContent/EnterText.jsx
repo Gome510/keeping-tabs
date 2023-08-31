@@ -19,6 +19,11 @@ const EnterText = () => {
       console.log("please sign in to send messages.")
       return;
     }
+
+    if (input=='') {
+      console.log("please type something in your message")
+      return;
+    }
     
     const { uid, displayName, photoURL } = auth.currentUser;
     const newMessage = await addDoc(collection(firestore, "channel1"), { //this "channel1" should be replace with the variable for the current channel
@@ -29,7 +34,7 @@ const EnterText = () => {
       time: serverTimestamp(),
     });
 
-    console.log(newMessage)
+    // console.log(newMessage)
 
     setInput("");
   };
@@ -44,7 +49,7 @@ const EnterText = () => {
         placeholder='Enter message here...'
         onChange={(e) => setInput(e.target.value)}
       />
-      <button type='submit' className={classes.btn}> </button>
+      <button type='submit' className={classes.btn}><img src={arrow}/></button>
     </form>
     </div>
   );
