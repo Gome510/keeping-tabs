@@ -45,7 +45,7 @@ export default function Messages(){
                 id={message.id}
                 text={message.text}
                 time={message.time}
-                picture={message.pfp}
+                pfp={message.pfp}
                 userName={message.user_name}
             />
         )
