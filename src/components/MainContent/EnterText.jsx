@@ -3,6 +3,7 @@ import { useRef } from 'react';
 // import Button from '../UI/Button'; // ??
 // import Input from '../UI/Input'; // ??
 import classes from './EnterText.module.css';
+import arrow from "../../assets/sendArrow.png"
 
 const EnterText = () => {
   const messageInputRef = useRef();
@@ -14,6 +15,7 @@ const EnterText = () => {
   };
 
   return (
+    <div className={classes.inputContainer }>
     <form className={classes.container} onSubmit={submitMessageHandler}>
       <input
         className={classes.input}
@@ -21,8 +23,9 @@ const EnterText = () => {
         placeholder='Enter message here...'
         ref={messageInputRef}
       ></input>
-      <button className={classes.btn}>Send</button>
+      <img src={arrow} width='45px' className={classes.btn}/>
     </form>
+    </div>
   );
 };
 

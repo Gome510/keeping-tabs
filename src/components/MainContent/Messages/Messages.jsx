@@ -4,10 +4,10 @@ import messageData from "../../../assets/message-data.json";
 
 
 export default function Messages(){
-    const styles = {
-        backgroundColor: "grey",
-        border: "1px solid black"
-    }
+    // const styles = {
+    //     backgroundColor: "grey",
+    //     border: "1px solid black"
+    // }
     
     const messageArray = messageData.map((message) => {
         return(
