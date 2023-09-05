@@ -1,6 +1,7 @@
 import React from "react";
 import "./Message.css"
-
+import { auth, firestore } from "../../../firebase_setup/firebase";
+import { deleteDoc, doc } from "firebase/firestore";
 
 export default function Message (props) {
     const circleStyle={
@@ -10,7 +11,11 @@ export default function Message (props) {
         height:"60px"
     }
 
-    const formattedTimestamp = new Date(props.time).toLocaleString();
+    async function handleDelete() {
+      await deleteDoc(doc(firestore, "channel1", props.id)); //update when multiple channels
+    }
+
+    const formattedTimestamp = props.time.toDate().toLocaleString();
     //Sets user picture to white circle if pfp property is an empty string.
     const userPic = props.pfp ? <img src={props.pfp}/> : <div style={circleStyle}></div> 
 
@@ -20,7 +25,7 @@ export default function Message (props) {
           <div id="message-center">
           <div id='userName'><h3>{props.userName}</h3> </div> 
          <div id='timeStamp'>{formattedTimestamp}</div>
-         <div id='deleteButton' > <button> {'\u274C'} </button></div>
+         {auth.currentUser.uid === props.userId ? <div id='deleteButton' > <button onClick={handleDelete} > {'\u274C'} </button></div>: <> </>}
          <div id='messageText'> <p> {props.text} </p></div>
           </div>
        </div>
