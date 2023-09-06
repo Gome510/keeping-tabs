@@ -25,7 +25,7 @@ export default function Message (props) {
           <div id="message-center">
           <div id='userName'><h3>{props.userName}</h3> </div> 
          <div id='timeStamp'>{formattedTimestamp}</div>
-         {auth.currentUser.uid === props.userId ? <div id='deleteButton' > <button onClick={handleDelete} > {'\u274C'} </button></div>: <> </>}
+         {(auth.currentUser != null && auth.currentUser.uid === props.userId) ? <div id='deleteButton' > <button onClick={handleDelete} > {'\u274C'} </button></div>: <> </>}
          <div id='messageText'> <p> {props.text} </p></div>
           </div>
        </div>
