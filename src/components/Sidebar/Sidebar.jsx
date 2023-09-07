@@ -1,14 +1,15 @@
-import React from "react";
+import React, { useContext } from "react";
 import "./Sidebar.css";
 import { Link } from "react-router-dom";
 import SignInButton from "./SignInButton/SignInButton";
 
 function Sidebar() {
+
   return (
     <div className="sidebar">
       <ul className="sidebar-channels">
       <li>
-          <Link className="link-styles" to="/test1"> {/* TODO link channels here, when ready*/}
+          <Link className="link-styles" onClick={() => {setChannel('channel2')}}> {/* TODO link channels here, when ready*/}
             Channel one
           </Link>
         </li>

@@ -5,7 +5,6 @@ import "./MainContent.css"
 
 const MainContent = () => {
   const currentChannel = "Channel Name 1";
-  // const [currentChannel, setCurrentChannel] = useState("Channel Name 1");
 
   return (
     <div id="mcGrid">
