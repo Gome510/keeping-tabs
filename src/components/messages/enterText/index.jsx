@@ -7,7 +7,7 @@ import { useParams } from "react-router";
 // import Button from '../UI/Button'; // ??
 // import Input from '../UI/Input'; // ??
 import classes from './EnterText.module.css';
-import arrow from "../../assets/sendArrow.png"
+import arrow from "../../../assets/sendArrow.png"
 
 
 const EnterText = () => {

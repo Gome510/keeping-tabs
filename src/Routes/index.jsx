@@ -1,6 +1,6 @@
 import { Outlet } from "react-router";
 import classes from "./App.module.css"
-import Sidebar from "../components/Sidebar/Sidebar";
+import Sidebar from "../components/sidebar";
 import ChannelHeader from "../components/header";
 import './MainContent.css'
 

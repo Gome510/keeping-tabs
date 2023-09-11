@@ -1,8 +1,8 @@
 import React, { useContext } from "react";
 import "./Sidebar.css";
 import { Link } from "react-router-dom";
-import SignInButton from "./SignInButton/SignInButton";
-import Profile from "./profile/profile";
+import SignInButton from "../UI/signinbutton";
+import Profile from "../UI/profile";
 
 function Sidebar() {
 

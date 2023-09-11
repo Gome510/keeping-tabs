@@ -1,8 +1,7 @@
-import React, { useEffect, useRef, useState }  from "react";
-import Message from "./Message"
+import React, { useEffect, useState }  from "react";
+import Message from "./message"
 import { useParams } from "react-router-dom"
 
-import messageData from "../../assets/message-data.json";
 import { query, collection, orderBy, onSnapshot } from "firebase/firestore";
 import { firestore } from "../../firebase_setup/firebase";
 
