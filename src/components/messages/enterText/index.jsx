@@ -1,5 +1,5 @@
 import { addDoc, collection, serverTimestamp } from "firebase/firestore";
-import { firestore, auth } from "../../firebase_setup/firebase";
+import { firestore, auth } from "../../../firebase_setup/firebase";
 
 import { useState } from 'react';
 import { useParams } from "react-router";

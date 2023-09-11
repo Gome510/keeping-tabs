@@ -1,7 +1,7 @@
 import { Outlet } from "react-router";
 import classes from "./App.module.css"
 import Sidebar from "../components/Sidebar/Sidebar";
-import ChannelHeader from "../components/MainContent/ChannelHeader";
+import ChannelHeader from "../components/header";
 import './MainContent.css'
 
 export default function Root() {

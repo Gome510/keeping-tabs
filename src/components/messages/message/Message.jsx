@@ -1,6 +1,6 @@
 import React from "react";
 import "./Message.css"
-import { auth, firestore } from "../../../firebase_setup/firebase";
+import { auth, firestore } from "../../firebase_setup/firebase";
 import { deleteDoc, doc } from "firebase/firestore";
 import { useParams } from "react-router";
 

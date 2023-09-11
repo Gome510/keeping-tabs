@@ -1,5 +1,5 @@
-import Messages from "../../components/MainContent/Messages/Messages"
-import EnterText from "../../components/MainContent/EnterText"
+import EnterText from "../../components/messages/enterText"
+import Messages from "../../components/messages"
 
 export default function Channel() {
     return (<>

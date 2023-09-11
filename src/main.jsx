@@ -2,7 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import Root from "./Routes/Root.jsx";
+import Root from "./Routes/index.jsx";
 import Channel from "./Routes/channel";
 import Home from "./Routes/home"
 
