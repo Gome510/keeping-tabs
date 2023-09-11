@@ -1,26 +1,31 @@
-import React from "react";
+import React, { useContext } from "react";
 import "./Sidebar.css";
 import { Link } from "react-router-dom";
 import SignInButton from "./SignInButton/SignInButton";
+import Profile from "./profile/profile";
 
 function Sidebar() {
+
   return (
     <div className="sidebar">
       <ul className="sidebar-channels">
       <li>
-          <Link className="link-styles" to="/test1"> {/* TODO link channels here, when ready*/}
+          <Link className="link-styles" to="messages/channel1"> {/* TODO link channels here, when ready*/}
             Channel one
           </Link>
         </li>
         <li>
-          <Link className="link-styles" to="/test2">
+          <Link className="link-styles" to="/messages/channel2">
             Channel Two
           </Link>
         </li>
         <li>
-        <Link className="link-styles" to="/test3">
+        <Link className="link-styles" to="/messages/channel3">
             Channel Three
           </Link>
+        </li>
+        <li>
+          <Profile />
         </li>
         <li>
           <SignInButton />

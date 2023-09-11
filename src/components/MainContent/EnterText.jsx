@@ -2,6 +2,7 @@ import { addDoc, collection, serverTimestamp } from "firebase/firestore";
 import { firestore, auth } from "../../firebase_setup/firebase";
 
 import { useState } from 'react';
+import { useParams } from "react-router";
 
 // import Button from '../UI/Button'; // ??
 // import Input from '../UI/Input'; // ??
@@ -11,6 +12,7 @@ import arrow from "../../assets/sendArrow.png"
 
 const EnterText = () => {
   const [input, setInput] = useState("")
+  const { channelId } = useParams()
 
   const submitMessageHandler = async (event) => {
     event.preventDefault();
@@ -26,7 +28,8 @@ const EnterText = () => {
     }
     
     const { uid, displayName, photoURL } = auth.currentUser;
-    const newMessage = await addDoc(collection(firestore, "channel1"), { //this "channel1" should be replace with the variable for the current channel
+    const newMessage = await addDoc(collection(firestore, channelId), {
+
       text: input,
       user_id: uid,
       user_name: displayName,

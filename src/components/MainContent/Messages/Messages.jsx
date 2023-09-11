@@ -1,16 +1,19 @@
 import React, { useEffect, useRef, useState }  from "react";
 import Message from "./Message"
-import messageData from "../../../assets/message-data.json";
+import { useParams } from "react-router-dom"
 
+import messageData from "../../../assets/message-data.json";
 import { query, collection, orderBy, onSnapshot } from "firebase/firestore";
 import { firestore } from "../../../firebase_setup/firebase";
 
 export default function Messages(){
     const [messages, setMessages] = useState([])
 
+    const { channelId } = useParams()
+
     useEffect(() => {
         const req = query(
-            collection(firestore, 'channel1'), //update with actual channel variable
+            collection(firestore, channelId), //update with actual channel variable
             orderBy("time","asc")
         )
 
@@ -32,7 +35,7 @@ export default function Messages(){
             console.log(`Encountered error: ${err}`)
         })
 
-    }, [])
+    }, [channelId])
 
     const styles = {
         backgroundColor: "grey",
@@ -54,8 +57,11 @@ export default function Messages(){
     });
 
     return(
+        <>
         <div className="messages">
             {messageArray}
         </div>
+        </>
+        
     );
 }
