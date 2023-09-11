@@ -28,7 +28,8 @@ const EnterText = () => {
     }
     
     const { uid, displayName, photoURL } = auth.currentUser;
-    const newMessage = await addDoc(collection(firestore, channelId), { //this "channel1" should be replace with the variable for the current channel
+    const newMessage = await addDoc(collection(firestore, channelId), {
+
       text: input,
       user_id: uid,
       user_name: displayName,

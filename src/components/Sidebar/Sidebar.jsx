@@ -2,6 +2,7 @@ import React, { useContext } from "react";
 import "./Sidebar.css";
 import { Link } from "react-router-dom";
 import SignInButton from "./SignInButton/SignInButton";
+import Profile from "./profile/profile";
 
 function Sidebar() {
 
@@ -22,6 +23,9 @@ function Sidebar() {
         <Link className="link-styles" to="/messages/channel3">
             Channel Three
           </Link>
+        </li>
+        <li>
+          <Profile />
         </li>
         <li>
           <SignInButton />

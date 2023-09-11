@@ -4,6 +4,7 @@ import "./index.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Root from "./Routes/Root.jsx";
 import Channel from "./Routes/channel";
+import Home from "./Routes/home"
 
 const router = createBrowserRouter([
   {
@@ -13,6 +14,10 @@ const router = createBrowserRouter([
       {
         path: "messages/:channelId",
         element: <Channel />,
+      },
+      {
+        index: true,
+        element: <Home />,
       },
     ],
   },
