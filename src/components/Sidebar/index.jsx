@@ -1,39 +1,34 @@
 import React, { useContext } from "react";
-import "./Sidebar.css";
+import classes from "./sidebar.module.css";
 import { Link } from "react-router-dom";
-import SignInButton from "../UI/signinbutton";
-import Profile from "../UI/profile";
+import Profile from "../UI/userProfile";
 
 function Sidebar() {
 
   return (
-    <div className="sidebar">
-      <ul className="sidebar-channels">
+    <div className={classes["sidebar"]}>
+      <ul className={classes["sidebar-channels"]}>
       <li>
-          <Link className="link-styles" to="messages/channel1"> {/* TODO link channels here, when ready*/}
+          <Link className={classes["link-styles"]} to="messages/channel1"> {/* TODO link channels here, when ready*/}
             Channel one
           </Link>
         </li>
         <li>
-          <Link className="link-styles" to="/messages/channel2">
+          <Link className={classes["link-styles"]} to="/messages/channel2">
             Channel Two
           </Link>
         </li>
         <li>
-        <Link className="link-styles" to="/messages/channel3">
+        <Link className={classes["link-styles"]} to="/messages/channel3">
             Channel Three
           </Link>
         </li>
-        <li>
-          <Profile />
-        </li>
-        <li>
-          <SignInButton />
-        </li>
       </ul>
-      <div className="add-channel">
+      <Profile />
+      <div className={classes["add-channel"]}>
         <img src="../../public/images/plus.svg" />
       </div>
+      
     </div>
   );
 }

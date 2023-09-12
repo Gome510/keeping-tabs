@@ -1,24 +1,22 @@
 .inputContainer {
+  justify-self: flex-end;
   height: 10vh;
   background-color: #f6f6ff;
   display: grid;
   grid-template-columns: 95% 5%; 
   grid-column-gap: 0px;
   grid-row-gap: 0px;
-  color: black;
   height: 12vh;
-  padding: 5px;
 }
 
 .input {
-  grid-area: 1 / 1 / 2 / 2; 
   box-shadow: -1px 1px 3px 0.5px rgba(115, 138, 157, 0.79);
   border-radius: 7px;
   background-color: #FEFDFE;
   border: 1px solid #F6F6F6;
-  height: 60%;
+  color: black;
+  height: 100%;
   width: 90%;
-
 }
 
 .btn {

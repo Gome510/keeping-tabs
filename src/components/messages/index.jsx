@@ -5,6 +5,8 @@ import { useParams } from "react-router-dom"
 import { query, collection, orderBy, onSnapshot } from "firebase/firestore";
 import { firestore } from "../../firebase_setup/firebase";
 
+import classes from "./index.module.css"
+
 export default function Messages(){
     const [messages, setMessages] = useState([])
 
@@ -12,8 +14,8 @@ export default function Messages(){
 
     useEffect(() => {
         const req = query(
-            collection(firestore, channelId), //update with actual channel variable
-            orderBy("time","asc")
+            collection(firestore, channelId),
+            orderBy("time","desc")
         )
 
         const observer = onSnapshot(req, (querySnapshot) => {
@@ -57,10 +59,9 @@ export default function Messages(){
 
     return(
         <>
-        <div className="messages">
-            {messageArray}
-        </div>
+            <div className={classes["messages"]}>
+                {messageArray}
+            </div>
         </>
-        
     );
 }

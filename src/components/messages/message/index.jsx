@@ -1,5 +1,5 @@
 import React from "react";
-import "./Message.css"
+import classes from "./message.module.css"
 import { auth, firestore } from "../../../firebase_setup/firebase";
 import { deleteDoc, doc } from "firebase/firestore";
 import { useParams } from "react-router";
@@ -23,13 +23,13 @@ export default function Message (props) {
     const userPic = props.pfp ? <img src={props.pfp}/> : <div style={circleStyle}></div> 
 
     return(
-       <div id="message-container">
-          <div id='userProfPic'>{userPic}</div>
-          <div id="message-center">
-          <div id='userName'><h3>{props.userName}</h3> </div> 
-         <div id='timeStamp'>{formattedTimestamp}</div>
-         {(auth.currentUser != null && auth.currentUser.uid === props.userId) ? <div id='deleteButton' > <button onClick={handleDelete} > {'\u274C'} </button></div>: <> </>}
-         <div id='messageText'> <p> {props.text} </p></div>
+       <div className={classes["message-container"]}>
+          <div className={classes['userProfPic']}>{userPic}</div>
+          <div className={classes["message-center"]}>
+          <div className={classes['userName']}><h3>{props.userName}</h3> </div> 
+         <div className={classes['timeStamp']}>{formattedTimestamp}</div>
+         {(auth.currentUser != null && auth.currentUser.uid === props.userId) ? <div className={classes['deleteButton']} > <button onClick={handleDelete} > {'\u274C'} </button></div>: <> </>}
+         <div className={classes['messageText']}> <p> {props.text} </p></div>
           </div>
        </div>
     )
