@@ -1,4 +1,4 @@
-import { auth } from "../../../firebase_setup/firebase";
+import { auth } from "../../../../firebase_setup/firebase";
 import { useAuthState } from "react-firebase-hooks/auth";
 import { GoogleAuthProvider, signInWithRedirect } from "firebase/auth";
 

@@ -1,20 +1,18 @@
 import { Outlet } from "react-router";
-import classes from "./App.module.css"
 import Sidebar from "../components/sidebar";
-import ChannelHeader from "../components/header";
-import './MainContent.css'
+
+import classes from "./root.module.css"
+
 
 export default function Root() {
   return (
     <div className={classes["grid"]}>
-        <div className={classes["sidebar"]}> <Sidebar className={classes.sidebar} /> </div>
-        <div className={classes["main-content"]}>
-        <div id="mcGrid">
-          <div id="channelHeaderGrid">
-            <ChannelHeader />
-          </div>
-          <Outlet/>
+        <div className={classes["grid-column"]}>
+          <Sidebar className={classes.sidebar} />
         </div>
+        
+        <div className={classes["grid-column"]}>
+            <Outlet/>
         </div>
     </div>
   )

@@ -1,13 +1,13 @@
 import EnterText from "../../components/messages/enterText"
 import Messages from "../../components/messages"
 
+import classes from "./index.module.css"
+import ChannelHeader from "../../components/header"
+
 export default function Channel() {
-    return (<>
-        <main id="mainGrid">
+    return (<div className={classes["messages-container"]}>
+            <ChannelHeader />
             <Messages />
-        </main>
-        <div id="textInputGrid">
             <EnterText />
-        </div>
-    </>)
+    </div>)
 }

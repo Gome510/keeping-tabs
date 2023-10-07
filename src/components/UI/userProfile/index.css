@@ -1,0 +1,8 @@
+.userProfile {
+    display: flex;
+    flex-direction: column;
+}
+
+.userProfile > * {
+    margin: 5px;
+}
